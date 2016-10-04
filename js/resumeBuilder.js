@@ -1,5 +1,6 @@
-/* Udacity Javascript/Jquery Section
-	James Ruggieri
+/* 
+    Build Resume page using JS objects for data storage and
+    js functions with jQuery to render the various sections
 */
 
 // Bio
@@ -25,6 +26,8 @@ var bio = {
     ],
     "display" : function() {
         // Append values from the BIO object to the page
+
+
 
                 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
                 $('#header').prepend(formattedRole);
@@ -261,9 +264,6 @@ education.display();
 work.display();
 projects.display();
 bio.display();
-
-// Internationalize
-$('#main').append(internationalizeButton);
 
 // Map
 $('#mapDiv').append(googleMap);

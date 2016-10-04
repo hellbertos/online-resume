@@ -1,6 +1,6 @@
 // Helper file -- to keep things separate
 /*
-Use these strings to populate the page
+These strings to populate the page
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span class="sub-h1">%data%</span><hr/>';
