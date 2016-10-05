@@ -11,7 +11,9 @@ var bio = {
         "mobile" : "415-225-7896",
         "email" : "james.ruggieri@yahoo.com",
         "github" : "hellbertos",
-        "twitter" : "james_ruggieri",
+        "githubLink" : "https://github.com/hellbertos",
+        "linkedin" : "james_ruggieri",
+        "linkedinLink" : "https://www.linkedin.com/in/jamesruggieri",
         "location" : "San Francisco"
     },
     "bioPic" : "images/gravitar.jpg",
@@ -36,16 +38,16 @@ var bio = {
                 $("#header").prepend(formattedName);
 
                 // Contacts
-                var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+                var formattedMobile = HTMLmobile.replace(/%data%/g, bio.contacts.mobile);
                 $('#topContacts, #footerContacts').append(formattedMobile);
 
-                var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+                var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
                 $("#topContacts, #footerContacts").append(formattedEmail);
 
-                var formattedTwitter = HTMLtwitter.replace("%data%",bio.contacts.twitter);
+                var formattedTwitter = HTMLtwitter.replace("%data%",bio.contacts.linkedin).replace("%data2%",bio.contacts.linkedinLink);
                 $("#topContacts, #footerContacts").append(formattedTwitter);
 
-                var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+                var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github).replace("%data2%", bio.contacts.githubLink);
                 $("#topContacts, #footerContacts").append(formattedGithub);
 
                 var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
