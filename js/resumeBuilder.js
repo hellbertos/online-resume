@@ -19,12 +19,13 @@ var bio = {
     "bioPic" : "images/gravitar.jpg",
     "welcomeMsg" : "I am a web designer and front end web developer with a passion for creating accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft. When I'm not coding or pondering the latest web trends, techniques and advancements, I enjoy: a multitude of activities and outdoor endeavors, motorcycle restoration projects, home-brewing and learning to play guitar. Thanks for stopping by and don't hesitate to contact me via the email link above.",
     "skills" : [
-        "HTML",
-        "CSS",
-        "JS",
-        "Photoshop",
-        "Illustrator",
-        "Wordpress"
+        '<img class="skillsIco" src="./images/ico-html5.svg">',
+        '<img class="skillsIco" src="./images/ico-css3.svg">',
+        '<img class="skillsIco" src="./images/ico-js.svg">',
+        '<img class="skillsIco" src="./images/ico-wp.svg">',
+        '<img class="skillsIco" src="./images/ico-ps.svg">',
+        '<img class="skillsIco" src="./images/ico-il.svg">'
+        
     ],
     "display" : function() {
         // Append values from the BIO object to the page
