@@ -30,6 +30,18 @@ p {
  	font-family: Roboto;
 }
 
+.white-text a {
+	font-weight: 500;
+  	color: #FFFFFF;
+ 	font-family: Roboto;
+ 	font-size: 14px;
+ 	display: inherit;
+}
+
+.white-text a:hover {
+	text-decoration: underline;
+}
+
 .dark-grey-text {
 	color: #5c5c5c;
 }
