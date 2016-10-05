@@ -19,7 +19,7 @@ p {
 
 .seaFoam-text {
 	color: #99cfb6;
-  	font-family: Michroma;
+  	font-family: 'Michroma', sans-serif;
   	font-weight: 300;
   	font-size: 14px;
 }
@@ -87,9 +87,10 @@ hr {
   	font-family: Michroma;
  	font-size: 18px;
  	font-weight: 300;
-}
-#skills li {
-	font-size: 18px;
+
+.skillsIco {
+	width: 50%;
+	height: auto;
 }
 
 .welcome-message {
