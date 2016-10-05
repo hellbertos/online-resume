@@ -19,12 +19,12 @@ var bio = {
     "bioPic" : "images/gravitar.jpg",
     "welcomeMsg" : "I am a web designer and front end web developer with a passion for creating accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft. When I'm not coding or pondering the latest web trends, techniques and advancements, I enjoy: a multitude of activities and outdoor endeavors, motorcycle restoration projects, home-brewing and learning to play guitar. Thanks for stopping by and don't hesitate to contact me via the email link above.",
     "skills" : [
-        '<img class="skillsIco" src="./images/ico-html5.svg">',
-        '<img class="skillsIco" src="./images/ico-css3.svg">',
-        '<img class="skillsIco" src="./images/ico-js.svg">',
-        '<img class="skillsIco" src="./images/ico-wp.svg">',
-        '<img class="skillsIco" src="./images/ico-ps.svg">',
-        '<img class="skillsIco" src="./images/ico-il.svg">'
+        '<img class="skillsIco htmlSkill" src="./images/ico-html5.svg">',
+        '<img class="skillsIco cssSkill" src="./images/ico-css3.svg">',
+        '<img class="skillsIco jsSkill" src="./images/ico-js.svg">',
+        '<img class="skillsIco wpSkill" src="./images/ico-wp.svg">',
+        '<img class="skillsIco psSkill" src="./images/ico-ps.svg">',
+        '<img class="skillsIco ilSkill" src="./images/ico-il.svg">'
         
     ],
     "display" : function() {
@@ -266,7 +266,36 @@ var projects = {
 education.display();
 work.display();
 projects.display();
-bio.display();
+bio.display();/*
+Set up Tipso for Skills Tool Tips
+*/
+$('.htmlSkill').tipso({
+  speed             : 400,        
+  background        : '#e44f26',
+  titleBackground   : '#333333',
+  color             : '#ffffff',
+  titleColor        : '#ffffff',
+  titleContent      : 'HTML',       
+  showArrow         : true,
+  position          : 'bottom',
+  width             : 200,
+  maxWidth          : '',
+  delay             : 200,
+  hideDelay         : 0,
+  animationIn       : 'bounceIn',
+  animationOut      : 'bounceOut',
+  offsetX           : 0,
+  offsetY           : 0,
+  tooltipHover      : true,
+  content           : 'I enjoy creating clean semantic html templates and love figuring out challenging design layouts',
+  ajaxContentUrl    : null,
+  contentElementId  : null,
+  useTitle          : false,
+  templateEngineFunc: null,
+  onBeforeShow      : null,
+  onShow            : null,
+  onHide            : null
+});
 
 // Map
 $('#mapDiv').append(googleMap);
