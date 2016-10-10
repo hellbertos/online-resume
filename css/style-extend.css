@@ -90,8 +90,12 @@ hr {
  }
 
 .skillsIco {
-	width: 50%;
-	height: auto;
+	/*width: 50%;
+	height: auto;*/
+}
+
+.tipso_style {
+    border-bottom: none;
 }
 
 .welcome-message {
