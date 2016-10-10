@@ -269,6 +269,7 @@ projects.display();
 bio.display();/*
 Set up Tipso for Skills Tool Tips
 */
+// HTML Tooltip
 $('.htmlSkill').tipso({
   speed             : 400,        
   background        : '#e44f26',
@@ -296,6 +297,93 @@ $('.htmlSkill').tipso({
   onShow            : null,
   onHide            : null
 });
+// CSS Tooltip
+$('.cssSkill').tipso({
+  speed             : 400,        
+  background        : '#1572b6',
+  titleBackground   : '#333333',
+  color             : '#ffffff',
+  titleColor        : '#ffffff',
+  titleContent      : 'CSS',       
+  showArrow         : true,
+  position          : 'bottom',
+  width             : 200,
+  maxWidth          : '',
+  delay             : 200,
+  hideDelay         : 0,
+  animationIn       : 'bounceIn',
+  animationOut      : 'bounceOut',
+  offsetX           : 0,
+  offsetY           : 0,
+  tooltipHover      : true,
+  content           : 'I love the challenge of figuring out interesting design layouts and endeavor to get better at css animations :)',
+  ajaxContentUrl    : null,
+  contentElementId  : null,
+  useTitle          : false,
+  templateEngineFunc: null,
+  onBeforeShow      : null,
+  onShow            : null,
+  onHide            : null
+});
+// JS Tooltip
+$('.jsSkill').tipso({
+  speed             : 400,        
+  background        : '#63a814',
+  titleBackground   : '#333333',
+  color             : '#ffffff',
+  titleColor        : '#ffffff',
+  titleContent      : 'Javascript',       
+  showArrow         : true,
+  position          : 'bottom',
+  width             : 200,
+  maxWidth          : '',
+  delay             : 200,
+  hideDelay         : 0,
+  animationIn       : 'bounceIn',
+  animationOut      : 'bounceOut',
+  offsetX           : 0,
+  offsetY           : 0,
+  tooltipHover      : true,
+  content           : 'Mainly I use it for DOM manipulations; mostly jQuery, but some vanilla too. However, I continue to study the language, currently: ES6 and React.',
+  ajaxContentUrl    : null,
+  contentElementId  : null,
+  useTitle          : false,
+  templateEngineFunc: null,
+  onBeforeShow      : null,
+  onShow            : null,
+  onHide            : null
+});
+// WP Tooltip
+$('.wpSkill').tipso({
+  speed             : 400,        
+  background        : '#2857bf',
+  titleBackground   : '#333333',
+  color             : '#ffffff',
+  titleColor        : '#ffffff',
+  titleContent      : 'Wordpress',       
+  showArrow         : true,
+  position          : 'bottom',
+  width             : 200,
+  maxWidth          : '',
+  delay             : 200,
+  hideDelay         : 0,
+  animationIn       : 'bounceIn',
+  animationOut      : 'bounceOut',
+  offsetX           : 0,
+  offsetY           : 0,
+  tooltipHover      : true,
+  content           : 'I have been building custom Wordpress themes for a couple years now and enjoy the platform. It inspires me to get better at PHP as well as the WP ecosystem.',
+  ajaxContentUrl    : null,
+  contentElementId  : null,
+  useTitle          : false,
+  templateEngineFunc: null,
+  onBeforeShow      : null,
+  onShow            : null,
+  onHide            : null
+});
+
+
+
 
 // Map
 $('#mapDiv').append(googleMap);
