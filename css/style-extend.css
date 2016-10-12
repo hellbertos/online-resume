@@ -89,6 +89,10 @@ hr {
  	font-weight: 300;
  }
 
+ .sub-text {
+ 	font-size: 14px;
+ }
+
 .skillsIco {
 	/*width: 50%;
 	height: auto;*/
