@@ -23,6 +23,7 @@ var bio = {
         '<img class="skillsIco cssSkill" src="./images/ico-css3.svg">',
         '<img class="skillsIco jsSkill" src="./images/ico-js.svg">',
         '<img class="skillsIco wpSkill" src="./images/ico-wp.svg">',
+        '<img class="skillsIco bsSkill" src="./images/ico-bs3.svg">',
         '<img class="skillsIco psSkill" src="./images/ico-ps.svg">',
         '<img class="skillsIco ilSkill" src="./images/ico-il.svg">'
         
