@@ -317,7 +317,7 @@ $('.cssSkill').tipso({
   offsetX           : 0,
   offsetY           : 0,
   tooltipHover      : true,
-  content           : 'I love modern web designs and like the challenge of figuring out interesting design layouts. Currently, I endeavor to get better at css animations.',
+  content           : 'I love modern web designs and like the challenge of figuring out interesting design layouts. Currently, I endeavor to get better at css animations and expert at Flex Box.',
   ajaxContentUrl    : null,
   contentElementId  : null,
   useTitle          : false,
