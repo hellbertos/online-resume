@@ -75,11 +75,23 @@ hr {
     background-image: linear-gradient(to right, rgba(134, 252, 198, 0), rgba(134, 252, 198, 0.75), rgba(134, 252, 198, 0));
 }
 
+.introImg {
+	flex-basis: 160px;
+	flex-grow: 0;
+}
+
+.introTxt {
+	flex-basis: 600px;
+	flex-grow: 1;
+}
+
 .biopic  {
 	 padding: 2px;
      background-color: #080808;
      margin: 0 10px 0 0;
-     border: 1px solid #B3B3B3
+     border: 1px solid #B3B3B3;
+     clear: both;
+     float: none;
 }
 
 #skillsH3, #toolsH3 {
@@ -89,7 +101,7 @@ hr {
  	font-weight: 300;
  }
 
- #toolsH3 {
+#skillsH3, #toolsH3 {
  	padding-left: 0;
  }
 
@@ -97,15 +109,14 @@ hr {
 	color: white;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 2px rgb(0,0,0);
-    text-transform: uppercase;
+    padding: 1.5%;
 }
  .sub-text {
  	font-size: 14px;
  }
 
 .skillsIco {
-	/*width: 50%;
-	height: auto;*/
+	width: 55%;
 }
 
 .tipso_style {

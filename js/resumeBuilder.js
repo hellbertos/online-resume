@@ -6,7 +6,7 @@
 // Bio
 var bio = {
     "name" : "James Ruggieri",
-    "role" : "Web Developer",
+    "role" : "Web Developer and Designer",
     "contacts" : {
         "mobile" : "415-225-7896",
         "email" : "james.ruggieri@yahoo.com",
@@ -17,7 +17,7 @@ var bio = {
         "location" : "San Francisco"
     },
     "bioPic" : "images/gravitar.jpg",
-    "welcomeMsg" : "I am a front end web developer and  web designer with a passion for creating functional, accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft. Currently I'm studying Flex Box, React and ES6 as well as taking online instruction to build my first Wordpress plugin.<br><br>When I'm not coding or pondering the latest web trends, techniques and advancements, I enjoy: a multitude of activities and outdoor endeavors, motorcycle restoration projects, home-brewing and learning to play guitar. Thanks for stopping by and don't hesitate to contact me via the email link above.",
+    "welcomeMsg" : "I am a front end web developer and  web designer with a passion for creating functional, accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft.<br><br>I hand code HTML and CSS. I've been slowly incorporating SASS into my workflow. I'm using Git more as I figure how it fits in my process. I love using Jquery but have been getting more into vanilla JS when it makes sense. Currently I'm studying Flex Box (I love the idea of no floats), React (Much more fun than Backbone to me) and ES6 (I love that I can loop w/o need 'closure' trickery) as well as taking online instruction to build my first Wordpress plugin.<br><br>When I'm not coding or pondering the latest web trends, techniques and advancements, I enjoy: a multitude of activities and outdoor endeavors, motorcycle restoration projects, home-brewing and learning to play guitar. Thanks for stopping by and don't hesitate to contact me via the email link above.",
     "skills" : [
         '<img class="skillsIco htmlSkill" src="./images/ico-html5.svg">',
         '<img class="skillsIco cssSkill" src="./images/ico-css3.svg">',
@@ -32,9 +32,8 @@ var bio = {
         'Sublime Text',
         'Web Storm',
         'Git',
-        'Photoshop',
-        'Illustrator',
-        'Acrobat',
+        'Node build tools',
+        'Adobe CC Suite',
         'Open Office',
         'MS Office'
     ],
@@ -67,11 +66,11 @@ var bio = {
 
                 // Pic
                 var formattedPic = HTMLbioPic.replace("%data%",bio.bioPic);
-                $("#header").append(formattedPic);
+                $(".intro").append(formattedPic);
 
                 // Welcome Message
                 var formattedMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMsg);
-                $("#header").append(formattedMsg);
+                $(".intro").append(formattedMsg);
 
                 // The Skills section
                 if ((bio.skills.length > 0) === true ) {
@@ -308,7 +307,7 @@ $('.htmlSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'I enjoy creating clean semantic html templates and integrating modern HTML5 tags; especially the &#60;picture&#62; tag for <em>image heavy</em> responsive sites.',
   ajaxContentUrl    : null,
@@ -336,7 +335,7 @@ $('.cssSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'I love modern web designs and like the challenge of figuring out interesting design layouts. Currently, I endeavor to get better at css animations and expert at Flex Box.',
   ajaxContentUrl    : null,
@@ -364,7 +363,7 @@ $('.jsSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'Mainly I use it for DOM manipulations and plugin control; mostly jQuery, but some vanilla too. I continue to study the language to evolve into a better programmer. Currently, I focus on ES6 and React.',
   ajaxContentUrl    : null,
@@ -392,7 +391,7 @@ $('.wpSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'I have been building custom Wordpress themes for a few years now and enjoy the platform. It inspires me to get better at PHP as well as the WP ecosystem.',
   ajaxContentUrl    : null,
@@ -420,7 +419,7 @@ $('.bsSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'Initially, I used Foundation as it felt leaner, but I have come to savor the bootstrap framework and the efficiency it brings to a web project. I use it almost exclusively now.',
   ajaxContentUrl    : null,
@@ -448,7 +447,7 @@ $('.psSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'A long time Photoshop user who relishes continually learning about the tool and refining my techniques.',
   ajaxContentUrl    : null,
@@ -476,7 +475,7 @@ $('.ilSkill').tipso({
   animationIn       : 'bounceIn',
   animationOut      : 'bounceOut',
   offsetX           : 0,
-  offsetY           : 0,
+  offsetY           : -10,
   tooltipHover      : true,
   content           : 'A usefull tool which I have become more proficient with as web design has embraced Flat UI and iconography as well as modern browsers offering SVG capability.',
   ajaxContentUrl    : null,
