@@ -82,13 +82,23 @@ hr {
      border: 1px solid #B3B3B3
 }
 
-#skillsH3 {
+#skillsH3, #toolsH3 {
 	color: #99CFB6;
   	font-family: Michroma;
  	font-size: 18px;
  	font-weight: 300;
  }
 
+ #toolsH3 {
+ 	padding-left: 0;
+ }
+
+#tools li {
+	color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(0,0,0);
+    text-transform: uppercase;
+}
  .sub-text {
  	font-size: 14px;
  }

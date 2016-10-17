@@ -28,6 +28,16 @@ var bio = {
         '<img class="skillsIco ilSkill" src="./images/ico-il.svg">'
         
     ],
+    "tools" : [
+        'Sublime Text',
+        'Web Storm',
+        'Git',
+        'Photoshop',
+        'Illustrator',
+        'Acrobat',
+        'Open Office',
+        'MS Office'
+    ],
     "display" : function() {
         // Append values from the BIO object to the page
 
@@ -69,6 +79,17 @@ var bio = {
                     for(var i = 0; i <= bio.skills.length - 1; i++) {
                         var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
                         $('#skills').append(formattedSkills);
+                        }
+
+                    }
+
+                // The Tools section
+                if ((bio.tools.length > 0) === true ) {
+                    $('#header').append(HTMLtoolsStart);
+
+                    for(var i = 0; i <= bio.tools.length - 1; i++) {
+                        var formattedTools = HTMLtools.replace("%data%", bio.tools[i]);
+                        $('#tools').append(formattedTools);
                         }
 
                     }

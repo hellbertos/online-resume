@@ -19,6 +19,9 @@ var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 var HTMLskillsStart = '<h3 id="skillsH3">Skills at a Glance: <span class="sub-text">hover for more info</span></h3><ul id="skills" class="flex-box"></ul>';
 var HTMLskills = '<li class="flex-item">%data%</li>';
 
+var HTMLtoolsStart = '<h3 id="toolsH3">Tools I Use:</h3><ul id="tools" class="flex-box"></ul> ';
+var HTMLtools = '<li class="flex-item">%data%</li>';
+
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
