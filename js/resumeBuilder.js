@@ -17,7 +17,8 @@ var bio = {
         "location" : "San Francisco"
     },
     "bioPic" : "images/gravitar-test.jpg",
-    "welcomeMsg" : "I am a front end web developer and  web designer with a passion for creating functional, accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft.<br><br>I hand code HTML and CSS. I've been slowly incorporating SASS into my workflow. I'm using Git more as I figure how it fits in my process. I love using Jquery but have been getting more into vanilla JS when it makes sense. Currently I'm studying Flex Box (I love the idea of no floats), React (Much more fun than Backbone to me) and ES6 (I love that I can loop w/o need 'closure' trickery) as well as taking online instruction to build my first Wordpress plugin.<br><br>Where design is concerned, I endeavor to approach each new project from a UX perspective coming from a foundation of existing content and desired user flow. Clean, unobtrusive and functional best describes my design sensibilities.",
+    "welcomeMsg" : "I am a front end web developer and  web designer with a passion for creating functional, accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft.<br><br>I hand code HTML and CSS. I've been slowly incorporating SASS into my workflow. I'm using Git more as I figure how it fits in my process. I love using Jquery but have been getting more into vanilla JS when it makes sense. Currently I'm studying Flex Box (I love the idea of no floats), React (Much more fun than Backbone to me) and ES6 (I love that I can loop w/o need 'closure' trickery) as well as taking online instruction to build my first Wordpress plugin.<br><br>Where design is concerned, I endeavor to approach each new project from a UX perspective coming from a foundation of existing content and desired user flow. Clean, unobtrusive and functional best describes my design directive.",
+    "personalInfo" : 'When I am not coding or pondering the latest web trends, techniques and advancements, I enjoy: a multitude of activities and outdoor endeavors, motorcycle restoration projects, home-brewing and learning to play guitar. Thanks for stopping by and do not hesitate to contact me via the email link above.',
     "skills" : [
         '<img class="skillsIco htmlSkill" src="./images/ico-html5.svg">',
         '<img class="skillsIco cssSkill" src="./images/ico-css3.svg">',
@@ -71,6 +72,14 @@ var bio = {
                 // Welcome Message
                 var formattedMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMsg);
                 $(".intro").append(formattedMsg);
+
+                // Button trigger to show Personal Info
+                //$('.welcome-message').append(HTMLprsnlInfoBtn);
+
+                // Personal Info
+                $('#header').append(HTMLpersonalStart);
+                var formattedPersonalInfo = HTMLpersonalInfo.replace('%data%', bio.personalInfo);
+                $('#personalH3').append(formattedPersonalInfo);
 
                 // The Skills section
                 if ((bio.skills.length > 0) === true ) {

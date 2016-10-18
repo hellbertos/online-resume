@@ -16,6 +16,10 @@ var HTMLlocation = '<li class="flex-item"><span class="seaFoam-text">location</s
 var HTMLbioPic = '<div class="introImg"><img src="%data%" class="biopic"></div>';
 var HTMLwelcomeMsg = '<div class="introTxt"><span class="welcome-message">%data%</span></div>';
 
+var HTMLpersonalStart = '<h3 id="personalH3">Click for Additional Info</h3>';
+var HTMLpersonalInfo = '<div class="personalInfo">%data%</div>';
+//var HTMLprsnlInfoBtn = '<button class="showInfo">View Personal Info</button>';
+
 var HTMLskillsStart = '<h3 id="skillsH3">Skills at a Glance: <span class="sub-text">hover for more info</span></h3><ul id="skills" class="flex-box"></ul>';
 var HTMLskills = '<li class="flex-item">%data%</li>';
 
@@ -67,6 +71,25 @@ $(document).ready(function() {
       $(this).find('.projectCTA').slideUp(200);
     });
 
+});
+
+// Set up click handler for Personal Info
+$(document).ready(function() {
+  var prsnlHdr = $('#personalH3');
+  var prsnlInfo = $('.personalInfo');
+
+  prsnlHdr.on('click', function() {
+    prsnlInfo.toggleClass('open');
+  });
+
+  // Set click handler
+  /*prsnlHdr.on('click', function() {
+    // Set to ZERO
+    prsnlInfo.css('opacity', 0);
+    prsnlInfo.toggleClass('open').animate({
+      opacity: 1,
+    }, 3000 );
+  });*/
 });
 
 /*

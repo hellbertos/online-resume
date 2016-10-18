@@ -80,10 +80,6 @@ hr {
 	flex-grow: 0;
 }
 
-.introImg img {
-	
-}
-
 .introTxt {
 	flex-basis: 600px;
 	flex-grow: 1;
@@ -96,6 +92,61 @@ hr {
      border: 1px solid #B3B3B3;
      clear: both;
      float: none;
+}
+
+.welcome-message, .personalInfo {
+	font-family: 'Raleway', san-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+    color: #f3f3f3;
+}
+
+ .personalInfo {
+ 	display: none;
+ 	opacity: 0;
+ 	animation: fadeInFromNone 1.5s ease-out;
+ }
+
+ @keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+ .open {
+ 	display: block;
+ 	opacity: 1;
+
+ }
+
+ #personalH3 {
+ 	color: #99CFB6;
+ 	background-color: #333;
+  	font-family: Michroma;
+ 	font-size: 14px;
+ 	font-weight: 300;
+ 	padding: 4px 0 4px 4px;
+ 	margin-bottom: 8px;
+ }
+
+.showInfo {
+	background-color: #69a589;
+	color: #fff;
+	display: inherit;
+	padding: 8px;
+	border-radius: 4px;
 }
 
 #skillsH3, #toolsH3 {
@@ -125,13 +176,6 @@ hr {
 
 .tipso_style {
     border-bottom: none;
-}
-
-.welcome-message {
-	font-style: none;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Raleway;
 }
 
 /* Work Experience */
