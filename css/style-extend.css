@@ -158,13 +158,17 @@ hr {
 
 #skillsH3, #toolsH3 {
  	padding-left: 0;
+ 	padding-bottom: 0;
  }
+
+#toolsH3 {
+  	padding-top: 0;
+}
 
 #tools li {
 	color: white;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 2px rgb(0,0,0);
-    padding: 1.5%;
 }
  .sub-text {
  	font-size: 14px;

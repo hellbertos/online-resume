@@ -81,15 +81,6 @@ $(document).ready(function() {
   prsnlHdr.on('click', function() {
     prsnlInfo.toggleClass('open');
   });
-
-  // Set click handler
-  /*prsnlHdr.on('click', function() {
-    // Set to ZERO
-    prsnlInfo.css('opacity', 0);
-    prsnlInfo.toggleClass('open').animate({
-      opacity: 1,
-    }, 3000 );
-  });*/
 });
 
 /*
