@@ -76,8 +76,12 @@ hr {
 }
 
 .introImg {
-	flex-basis: 160px;
+	flex-basis: 196px;
 	flex-grow: 0;
+}
+
+.introImg img {
+	
 }
 
 .introTxt {
