@@ -17,8 +17,8 @@ var bio = {
         "location" : "San Francisco"
     },
     "bioPic" : "images/gravitar-test.jpg",
-    "welcomeMsg" : "I am a front end web developer and  web designer with a passion for creating functional, accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft.<br><br>I hand code HTML and CSS. I've been slowly incorporating SASS into my workflow. I'm using Git more as I figure how it fits in my process. I love using Jquery but have been getting more into vanilla JS when it makes sense. Currently I'm studying Flex Box (I love the idea of no floats), React (Much more fun than Backbone to me) and ES6 (I love that I can loop w/o need 'closure' trickery) as well as taking online instruction to build my first Wordpress plugin.<br><br>Where design is concerned, I endeavor to approach each new project from a UX perspective coming from a foundation of existing content and desired user flow. Clean, unobtrusive and functional best describes my design directive.",
-    "personalInfo" : 'When I am not coding, sharpening my photoshop skills, studying programming or pondering the latest web trends, techniques and advancements, I enjoy a multitude of other interests. I love outdoor activities of all kinds and enjoy being active. When the weather or responsibilities do not cooperate, I will at least get a workout in. I enjoy my motorcycles and like the mechanical challenge of fixing them. I recently finished a restoration project on an older bike and would like to do another. I have been home-brewing for about a year which has been a fun, frustrating and rewarding hobby. I continue to wrestle with my Linux Home Entertainment Network, though its more of a winter project :) Other interests include photography, learning guitar and world economic systems.<br><br>Thanks for stopping by and do not hesitate to contact me at any of the links above.',
+    "welcomeMsg" : "I am a front end web developer and  web designer with a passion for creating functional, accessible, informative and aesthetically pleasing web sites. I am continually striving to learn and progress in all phases of the craft.<br><br>I hand code HTML and CSS. I've been slowly incorporating SASS into my workflow. I'm using Git more as I figure how it fits in my process. I love using Jquery but have been getting more into vanilla JS when it makes sense. Currently I'm studying Flex Box (I love the idea of no floats), React (Much more fun than Backbone to me) and ES6 (I love that I can loop w/o need of 'closure' trickery) as well as taking online instruction to build my first Wordpress plugin.<br><br>Where design is concerned, I endeavor to approach each new project from a UX perspective coming from a foundation of existing content and desired user flow. Clean, unobtrusive and functional best describes my design directive.",
+    "personalInfo" : 'When I am not coding, sharpening my photoshop skills, studying programming or pondering the latest web trends, techniques and advancements, I enjoy a multitude of other interests.<br><br>I love outdoor activities of all kinds and enjoy being active. If I cannot find time to be outdoors, I will make sure to get a workout in at home. I enjoy my motorcycles and like the mechanical challenge of fixing them. I recently finished a restoration project on an older bike and would like to do another. I have been home-brewing for about a year which has been a fun, frustrating and rewarding hobby. I continue to wrestle with my Linux Home Entertainment Network, though its more of a winter project :) Other interests include photography, learning guitar and world economic systems.<br><br>Thanks for stopping by and do not hesitate to contact me at any of the links above.',
     "skills" : [
         '<img class="skillsIco htmlSkill" src="./images/ico-html5.svg">',
         '<img class="skillsIco cssSkill" src="./images/ico-css3.svg">',
@@ -109,6 +109,7 @@ var work = {
     "jobs" : [
         {
             "employer" : "Freelance Web Consultant",
+            "singleName" : "freelance",
             "title" : "Web Designer and Developer",
             "location" : "San Francisco, CA",
             "dates" : "2013 - Present",
@@ -121,24 +122,53 @@ var work = {
         },
         {
             "employer" : "Circle Dog Media",
+            "singleName" : "circle",
             "title" : "Web Designer/Developer",
             "location" : "San Francisco, CA",
             "dates" : "2010 - 2012",
-            "description" : "Cupcake ipsum dolor sit amet muffin. I love I love ice cream. Marzipan ice cream oat cake halvah icing tart biscuit halvah pudding. Dessert cake jelly beans sweet roll candy canes cake chupa chups chupa chups icing. Chocolate bar I love jelly beans ice cream. Icing tiramisu muffin lollipop ice cream. Jujubes halvah marshmallow chocolate cookie bonbon liquorice cake."
+            "description" : [
+                "Built responsive HTML templates and wrote CSS to match Photoshop comps.",
+                "Integrated Wordpress­specific PHP functionality to create custom WP themes.",
+                "Wrote JS and Jquery to integrate functional behaviors to various sections of websites",
+                "Wrote PHP, based around the Wordpress API, for custom themes."
+
+            ]
         },
         {
             "employer" : "Brayton Hughes Design",
+            "singleName" : "brayton",
             "title" : "Server Administrator/LAN Analyst",
             "location" : "San Francisco CA",
             "dates" : "2005 - 2008",
-            "description" : "Flagfish Black scabbardfish sarcastic fringehead barred danio. Cutthroat trout cutlassfish anchovy Gila trout, Manta Ray cavefish cusk-eel? Basslet glowlight danio cookie-cutter shark skipjack tuna Blind shark river stingray pompano Peter's elephantnose fish yellowfin pike, sandburrower gar. Atlantic herring vendace neon tetra ballan wrasse elasmobranch armored searobin creek chub Lost River sucker, barb swallower? Paperbone fangtooth tilefish kahawai tompot blenny opaleye spiderfish snakehead!"
+            "description" : [
+                "Handled all daily administration of Windows Server and network of 100 computers and large format devices.",
+                "Managed IT consultant engineers for server, network and large format printing issues.",
+                "Documented and refined all processes; focusing on training, data archiving and moving teams within office.",
+                "Increased efficiency by dramatically reducing time to identify, locate and restore archived project material",
+                "Trained new and existing employees in required software, network usage protocol and network navigation."
+            ]
         },
         {
             "employer" : "Pear Transmedia",
+            "singleName" : "pear",
             "title" : "Web Designer/Developer",
             "location" : "Oakland, CA",
             "dates" : "2003 - 2005",
-            "description" : "Pacific salmon river loach queen parrotfish codling, opaleye menhaden bandfish golden trout, Black triggerfish angelfish shovelnose sturgeon shovelnose sturgeon. Rock bass antenna codlet atka mackerel--New Zealand sand diver, pink salmon olive flounder milkfish discus. Gulper livebearer koi atka mackerel daggertooth pike conger, bristlenose catfish pencilfish rockfish, eeltail catfish."
+            "description" : [
+               "Assisted in initial planning, information architecture and wire framing phases of projects.",
+               "Created Photoshop design comps based on wire frame documents, initial directives and project goals.",
+               "Coded HTML templates and wrote CSS rules based on final design comps.",
+               "Integrated HTML into PHP structures and wrote some PHP and MySQL.",
+               "Assisted in phases of build and launch whether production art, QA testing and/or documentation."
+            ]
+        },
+        {
+            "employer" : "Additional Related Experience",
+            "singleName" : "additional",
+            "title" : "",
+            "location" : "San Francisco",
+            "dates" : "2004 and previous",
+            "description" : "6+ years experience with various SF Bay Area firms in a the capacity of a designer and front-end developer using HTML, CSS, Javascript, PHP, MySQL, CVS version control, Homesite, Photoshop, Illustrator, Visio, MS Office."
         }
     ],
     "display" : function() {
@@ -155,18 +185,21 @@ var work = {
                 var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[job].location);
                 $('.work-entry:last').append(formattedLocation);
 
+                var formattedJobList = HTMLworkDescStart.replace("%data%", work.jobs[job].singleName);
                 if (Array.isArray(work.jobs[job].description) === true ) {
-                    // Append the UL
-                    $('.work-entry:last').append(HTMLworkDescStart);
+                    
+                    $('.work-entry:last').append(formattedJobList);
 
                     // Loop through the items.
                     for(var j = 0; j <= work.jobs[job].description.length-1; j++ ) {
+
                         var formattedJobItem = HTMLworkDescList.replace('%data%', work.jobs[job].description[j]);
-                        $('.job-list').append(formattedJobItem);
+                        $('.'+ work.jobs[job].singleName+'-job-list').append(formattedJobItem);
                    }
 
                 } else {var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-                                $('.work-entry:last').append(formattedDescription);}
+                                $('.work-entry:last').append(formattedDescription);
+                }
 
             }
 

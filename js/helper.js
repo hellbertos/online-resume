@@ -31,7 +31,7 @@ var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescStart = '<ul class="job-list"></ul>'
+var HTMLworkDescStart = '<ul class="%data%-job-list job-lists"></ul>'
 var HTMLworkDescList = '<li class="job-item">%data%</li>'
 var HTMLworkDescription = '<p><br>%data%</p>';
 

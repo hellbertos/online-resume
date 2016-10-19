@@ -210,7 +210,7 @@ h2 {
 	color: #107456;
 }
 
-.job-list {
+.job-lists {
 	margin-top: 20px;
 	padding-left: 10px;
 }
@@ -218,7 +218,7 @@ h2 {
 .job-item {
 	color: #595959;
 	padding: 3px 0;
-	font-size: 18px;
+	font-size: 16px;
 	padding-left: 25px;
 	background: transparent url(../images/li-bullet.png) center left no-repeat;
 }
