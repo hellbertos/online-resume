@@ -108,11 +108,16 @@ var bio = {
 var work = {
     "jobs" : [
         {
-            "employer" : "Mineral Media Labz",
+            "employer" : "Freelance Web Consultant",
             "title" : "Web Designer and Developer",
             "location" : "San Francisco, CA",
             "dates" : "2013 - Present",
-            "description" : "Cupcake ipsum dolor sit amet fruitcake bonbon apple pie I love. Dessert cake I love lemon drops cookie gummi bears jelly-o chocolate I love. I love tiramisu bonbon gummies gingerbread dragée marshmallow. Powder muffin gummi bears oat cake. Danish sugar plum caramels caramels topping jelly. Marzipan tiramisu macaroon gummies marzipan I love pudding"
+            "description" : [
+                "Perform start-to-finish planning, designing, coding and launching of Wordpress-based websites then training new owners.",
+                "Enhance, update and maintain existing websites; self-created and those owned by other entities.",
+                "Create HTML, CSS, Javascript/Jquery freelance work for a variety of vendors.",
+                "Hired and worked with content creators as well as other designers, Wordpress devs and front-end devs"
+            ]
         },
         {
             "employer" : "Circle Dog Media",
@@ -150,8 +155,18 @@ var work = {
                 var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[job].location);
                 $('.work-entry:last').append(formattedLocation);
 
-                var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-                $('.work-entry:last').append(formattedDescription);
+                if (Array.isArray(work.jobs[job].description) === true ) {
+                    // Append the UL
+                    $('.work-entry:last').append(HTMLworkDescStart);
+
+                    // Loop through the items.
+                    for(var j = 0; j <= work.jobs[job].description.length-1; j++ ) {
+                        var formattedJobItem = HTMLworkDescList.replace('%data%', work.jobs[job].description[j]);
+                        $('.job-list').append(formattedJobItem);
+                   }
+
+                } else {var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+                                $('.work-entry:last').append(formattedDescription);}
 
             }
 
