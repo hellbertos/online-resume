@@ -301,8 +301,8 @@ var projects = {
             "title" : "caiakoopman.com",
             "dates" : "2014 - present",
             "description" : "And when thou art so gone before&mdash;if that ever befall&mdash;then ere I can follow, thou must still appear to me, to pilot me still?&mdash;Was it not so? Well, then, did I believe all ye say, oh my pilot! I have here two pledges that I shall yet slay Moby Dick and survive it. Take another pledge, old man, said the Parsee, as his eyes lighted up like fire-flies in the gloom&mdash;Hemp only can kill thee. The gallows, ye mean.&mdash;I am immortal then, on land and on sea, cried Ahab, with a laugh of derision;&mdash;Immortal on land and on sea!",
-            "images" : ["images/caia-home.jpg", "images/caia-portfolio.jpg", "images/caia-contact.jpg"],
-            "imagesLb" : ["images/caia-home-lb.jpg", "images/caia-portfolio-lb.jpg", "images/caia-contact-lb.jpg"]
+            "images" : ["images/caia-home.jpg", "images/caia-portfolio.jpg", "images/caia-shop.jpg", "images/caia-contact.jpg"],
+            "imagesLb" : ["images/caia-home-lb.jpg", "images/caia-portfolio-lb.jpg", "images/caia-shop-lb.jpg", "images/caia-contact-lb.jpg"]
         },
         {
             "title" : "touchwellness.com",
