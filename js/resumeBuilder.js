@@ -291,18 +291,18 @@ var education = {
 var projects = {
     "project" : [
         {
+            "title" : "crescentmoonskincare.com",
+            "dates" : "2016",
+            "description" : "Oh no way! Not many, if any, this beached as hongi is as naff as a tapu seabed. Mean while, in West Auckland, Lomu and Maui were up to no good with a bunch of cool wifebeater singlets. The chocka full force of his packing a sad was on par with Jim Hickey's sweet pohutukawa. Put the jug on will you bro, all these pretty suss cheese on toasts can wait till later. The first prize for chundering goes to... John Key and his beaut lamington, what a sad guy. Bro, boxes of fluffies are really wicked good with random Hei-tikis, aye. You have no idea how sweet as our epic bottles of tomato sauce were aye.",
+            "images" : ["images/cm-home.jpg", "images/cm-srv2.jpg", "images/cm-serv.jpg", "images/cm-contact.jpg"],
+            "imagesLb" : ["images/cm-home-lb.jpg", "images/cm-srv2-lb.jpg", "images/cm-serv-lb.jpg", "images/cm-contact-lb.jpg"]
+        },
+        {
             "title" : "caiakoopman.com",
-            "dates" : "2013 - present",
+            "dates" : "2014 - present",
             "description" : "And when thou art so gone before&mdash;if that ever befall&mdash;then ere I can follow, thou must still appear to me, to pilot me still?&mdash;Was it not so? Well, then, did I believe all ye say, oh my pilot! I have here two pledges that I shall yet slay Moby Dick and survive it. Take another pledge, old man, said the Parsee, as his eyes lighted up like fire-flies in the gloom&mdash;Hemp only can kill thee. The gallows, ye mean.&mdash;I am immortal then, on land and on sea, cried Ahab, with a laugh of derision;&mdash;Immortal on land and on sea!",
             "images" : ["images/caia-home.jpg", "images/caia-portfolio.jpg", "images/caia-contact.jpg"],
             "imagesLb" : ["images/caia-home-lb.jpg", "images/caia-portfolio-lb.jpg", "images/caia-contact-lb.jpg"]
-        },
-        {
-            "title" : "crescentmoonskincare.com",
-            "dates" : "2013",
-            "description" : "Oh no way! Not many, if any, this beached as hongi is as naff as a tapu seabed. Mean while, in West Auckland, Lomu and Maui were up to no good with a bunch of cool wifebeater singlets. The chocka full force of his packing a sad was on par with Jim Hickey's sweet pohutukawa. Put the jug on will you bro, all these pretty suss cheese on toasts can wait till later. The first prize for chundering goes to... John Key and his beaut lamington, what a sad guy. Bro, boxes of fluffies are really wicked good with random Hei-tikis, aye. You have no idea how sweet as our epic bottles of tomato sauce were aye.",
-            "images" : ["images/cm-home.jpg", "images/cm-srvs.jpg", "images/cm-contact.jpg"],
-            "imagesLb" : ["images/cm-home-lb.jpg", "images/cm-srvs-lb.jpg", "images/cm-contact-lb.jpg"]
         },
         {
             "title" : "touchwellness.com",
