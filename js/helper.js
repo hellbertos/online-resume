@@ -36,16 +36,17 @@ var HTMLworkDescList = '<li class="job-item">%data%</li>'
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<a href="%link%">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectImgBlk = '<div class="imgRow"></div>';
 var HTMLprojectImage = '<div class="imgContainer"><a href="#" data-featherlight="%dataLb%"><img src="%data%"></a><div class="projectCTA"><span>Click to View Larger Image</span></div></div>';
 
 var HTMLsideProjectStart = '<div class="sideProject-entry"></div>';
-var HTMLsideProjectTitle = '<a href="#">%data%</a>';
+var HTMLsideProjectTitle = '<a href="%link%">%data%</a>';
 var HTMLsideProjectDates = '<div class="date-text">%data%</div>';
 var HTMLsideProjectDescription = '<p><br>%data%</p>';
-var HTMLsideProjectImage = '<div class="imgContainer"><a href="#" data-featherlight="%dataLb%"><img src="%data%"></a><div class="projectCTA"><span>Click to View Larger Image</span></div></div>';
+var HTMLsideProjectImage = '<div class="imgCntrFlex"><a href="#" data-featherlight="%dataLb%"><img src="%data%"></a><div class="projectCTA"><span>Click to View Larger Image</span></div></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -69,7 +70,7 @@ Use Jquery to layout anchor tags used with the lightbox plugin
 */
 
 $(document).ready(function() {
-  var imgContainer = $('.imgContainer');
+  var imgContainer = $('.imgContainer, .imgCntrFlex');
 
   // display and hide hidden div with click message
   imgContainer.hover(
