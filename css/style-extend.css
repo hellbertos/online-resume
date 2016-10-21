@@ -2,7 +2,7 @@
 Extend styles for customization
 */
 
-#workExperience, #projects, #education {
+#workExperience, #projects, #sideProjects, #education {
 	padding-bottom: 20px;
 }
 p {
@@ -197,6 +197,10 @@ h2 {
 	color: #808080;
 }
 
+h2.darkerGray {
+	color: #4a4a4a;
+}
+
 .dark-grey-hr {
 	color: #53666f;
     border: 0;
@@ -244,11 +248,23 @@ h2 {
 	display: none;
 }
 
+.imgRow {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .imgContainer {
+	width: 300px;
+	position: relative;
+}
+
+.imgCntrFlex {
 	display: inline-flex;
 	width: 300px;
 	position: relative;
 }
+
 .projectCTA a img {
 	z-index: 1;
 }
