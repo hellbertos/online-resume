@@ -292,6 +292,7 @@ var projects = {
     "project" : [
         {
             "title" : "crescentmoonskincare.com",
+            "link" : "http://crescentmoonskincare.com",
             "dates" : "2016",
             "description" : "Oh no way! Not many, if any, this beached as hongi is as naff as a tapu seabed. Mean while, in West Auckland, Lomu and Maui were up to no good with a bunch of cool wifebeater singlets. The chocka full force of his packing a sad was on par with Jim Hickey's sweet pohutukawa. Put the jug on will you bro, all these pretty suss cheese on toasts can wait till later. The first prize for chundering goes to... John Key and his beaut lamington, what a sad guy. Bro, boxes of fluffies are really wicked good with random Hei-tikis, aye. You have no idea how sweet as our epic bottles of tomato sauce were aye.",
             "images" : ["images/cm-home.jpg", "images/cm-srv2.jpg", "images/cm-serv.jpg", "images/cm-contact.jpg"],
@@ -299,6 +300,7 @@ var projects = {
         },
         {
             "title" : "caiakoopman.com",
+            "link" : "http://caiakoopman.com",
             "dates" : "2014 - present",
             "description" : "And when thou art so gone before&mdash;if that ever befall&mdash;then ere I can follow, thou must still appear to me, to pilot me still?&mdash;Was it not so? Well, then, did I believe all ye say, oh my pilot! I have here two pledges that I shall yet slay Moby Dick and survive it. Take another pledge, old man, said the Parsee, as his eyes lighted up like fire-flies in the gloom&mdash;Hemp only can kill thee. The gallows, ye mean.&mdash;I am immortal then, on land and on sea, cried Ahab, with a laugh of derision;&mdash;Immortal on land and on sea!",
             "images" : ["images/caia-home.jpg", "images/caia-portfolio.jpg", "images/caia-shop.jpg", "images/caia-contact.jpg"],
@@ -306,6 +308,7 @@ var projects = {
         },
         {
             "title" : "touchwellness.com",
+            "link" : "http://touchwellness.com",
             "dates" : "2015",
             "description" : "Put the jug on will you bro, all these dodgy rugby balls can wait till later. The first prize for reffing the game goes to... James Cook and his tip-top L&P, what a stink buzz. Bro, gumboots are really sweet as good with primo pavlovas, aye. I'm not here to frack spiders, good afterble constanoon. You have no idea how nuclear-free our choice twink sticks were aye.",
             "images" : ["images/tw-home.jpg", "images/tw-ctnt.jpg", "images/tw-contact.jpg"],
@@ -317,7 +320,7 @@ var projects = {
                     for (site in projects.project) {
                         $('#projects').append(HTMLprojectStart);
 
-                        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.project[site].title);
+                        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.project[site].title).replace("%link%", projects.project[site].link);
                         $('.project-entry:last').append(formattedTitle);
 
                         var formattedDates = HTMLprojectDates.replace("%data%", projects.project[site].dates);
@@ -328,9 +331,12 @@ var projects = {
 
                         // Iterate through images Array
                         if(projects.project[site].images.length > 0) {
+                            // Add the flexbox row for evenly spaced content
+                            $('.project-entry:last').append(HTMLprojectImgBlk);
+
                             for(pic in projects.project[site].images) {
                                 var formattedImage = HTMLprojectImage.replace("%data%", projects.project[site].images[pic]).replace("%dataLb%", projects.project[site].imagesLb[pic]);
-                                $('.project-entry:last').append(formattedImage);
+                                $('.imgRow:last').append(formattedImage);
                             }
 
                         }
@@ -345,12 +351,14 @@ var sideProjects = {
     "sideProject" : [
         {
             "title" : "Neighborhood Map",
+            "link": "http://mineralmedialabz.com/fendmap/",
             "description" : "Lorem ipsum",
             "images" : ["images/map-app.jpg", "images/map-app-active.jpg"],
             "imagesLb" : ["images/map-app-lb.jpg", "images/map-app-active-lb.jpg"]
         },
         {
             "title" : "Space Hop Arcade Game",
+            "link": "http://mineralmedialabz.com/spacehop/",
             "description" : "Ipsum lorem",
             "images" : ["images/space-hop-game.jpg"],
             "imagesLb" : ["images/space-hop-game-lb.jpg"]
@@ -362,7 +370,7 @@ var sideProjects = {
         for (app in sideProjects.sideProject) {
             $('#sideProjects').append(HTMLsideProjectStart);
 
-            var formattedTitle = HTMLsideProjectTitle.replace("%data%", sideProjects.sideProject[app].title);
+            var formattedTitle = HTMLsideProjectTitle.replace("%data%", sideProjects.sideProject[app].title).replace("%link%", sideProjects.sideProject[app].link);
             $('.sideProject-entry:last').append(formattedTitle);
 
             var formattedDescription = HTMLsideProjectDescription.replace("%data%",sideProjects.sideProject[app].description);
@@ -371,7 +379,7 @@ var sideProjects = {
              // Iterate through images Array
             if(sideProjects.sideProject[app].images.length > 0) {
                 for(pic in sideProjects.sideProject[app].images) {
-                    var formattedImage = HTMLprojectImage.replace("%data%", sideProjects.sideProject[app].images[pic]).replace("%dataLb%", sideProjects.sideProject[app].imagesLb[pic]);
+                    var formattedImage = HTMLsideProjectImage.replace("%data%", sideProjects.sideProject[app].images[pic]).replace("%dataLb%", sideProjects.sideProject[app].imagesLb[pic]);
                     $('.sideProject-entry:last').append(formattedImage);
                 }
 
