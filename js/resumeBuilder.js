@@ -340,11 +340,56 @@ var projects = {
                 }
 }
 
+// Side Projects Obj
+var sideProjects = {
+    "sideProject" : [
+        {
+            "title" : "Neighborhood Map",
+            "description" : "Lorem ipsum",
+            "images" : ["images/map-app.jpg", "images/map-app-active.jpg"],
+            "imagesLb" : ["images/map-app-lb.jpg", "images/map-app-active-lb.jpg"]
+        },
+        {
+            "title" : "Space Hop Arcade Game",
+            "description" : "Ipsum lorem",
+            "images" : ["images/space-hop-game.jpg"],
+            "imagesLb" : ["images/space-hop-game-lb.jpg"]
+        }
+    
+    ],
+    "display" : function() {
+        var app;
+        for (app in sideProjects.sideProject) {
+            $('#sideProjects').append(HTMLsideProjectStart);
+
+            var formattedTitle = HTMLsideProjectTitle.replace("%data%", sideProjects.sideProject[app].title);
+            $('.sideProject-entry:last').append(formattedTitle);
+
+            var formattedDescription = HTMLsideProjectDescription.replace("%data%",sideProjects.sideProject[app].description);
+            $('.sideProject-entry:last').append(formattedDescription);
+
+             // Iterate through images Array
+            if(sideProjects.sideProject[app].images.length > 0) {
+                for(pic in sideProjects.sideProject[app].images) {
+                    var formattedImage = HTMLprojectImage.replace("%data%", sideProjects.sideProject[app].images[pic]).replace("%dataLb%", sideProjects.sideProject[app].imagesLb[pic]);
+                    $('.sideProject-entry:last').append(formattedImage);
+                }
+
+            }
+
+        }
+
+
+    }
+}
+
 // Call the 'display' methods on the various sections out of order
 education.display();
 work.display();
 projects.display();
-bio.display();/*
+bio.display();
+sideProjects.display();
+/*
 Set up Tipso for Skills Tool Tips
 */
 // HTML Tooltip
