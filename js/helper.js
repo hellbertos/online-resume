@@ -41,6 +41,12 @@ var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<div class="imgContainer"><a href="#" data-featherlight="%dataLb%"><img src="%data%"></a><div class="projectCTA"><span>Click to View Larger Image</span></div></div>';
 
+var HTMLsideProjectStart = '<div class="sideProject-entry"></div>';
+var HTMLsideProjectTitle = '<a href="#">%data%</a>';
+var HTMLsideProjectDates = '<div class="date-text">%data%</div>';
+var HTMLsideProjectDescription = '<p><br>%data%</p>';
+var HTMLsideProjectImage = '<div class="imgContainer"><a href="#" data-featherlight="%dataLb%"><img src="%data%"></a><div class="projectCTA"><span>Click to View Larger Image</span></div></div>';
+
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = '&nbsp;-- %data%</a>';
