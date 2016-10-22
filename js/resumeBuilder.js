@@ -294,7 +294,7 @@ var projects = {
             "title" : "crescentmoonskincare.com",
             "link" : "http://crescentmoonskincare.com",
             "dates" : "2016",
-            "description" : "Oh no way! Not many, if any, this beached as hongi is as naff as a tapu seabed. Mean while, in West Auckland, Lomu and Maui were up to no good with a bunch of cool wifebeater singlets. The chocka full force of his packing a sad was on par with Jim Hickey's sweet pohutukawa. Put the jug on will you bro, all these pretty suss cheese on toasts can wait till later. The first prize for chundering goes to... John Key and his beaut lamington, what a sad guy. Bro, boxes of fluffies are really wicked good with random Hei-tikis, aye. You have no idea how sweet as our epic bottles of tomato sauce were aye.",
+            "description" : "The owners boutique skin care studio in San Francisco's Pacific Heights neighborhood contact me to redesign their website to focus on their core offering of clearing acneic skin and dealing with other serious skin afflictions. During the course of discovery, it was determined that we could streamline two important parts of their customer interaction by offering online booking and online product purchases, but only to acne clients; not every client who comes for their array of services.<br><br>The site is built on the Wordpress framework and uses WP's user roles to hide the online booking service and the web shop from general users as well as custom post types, widgets, and array of plugings; along with Wordpress's built in blogging engine and robust content management functionality.<br><br>The responsive, custom theme was built using Bootstrap; mainly using the grid and accordion components.<br><br>Technologies Used: HTML, CSS, JS, Bootstrap, Jquery, Wordpress, Woo Commerce, PHP.",
             "images" : ["images/cm-home.jpg", "images/cm-srv2.jpg", "images/cm-serv.jpg", "images/cm-contact.jpg"],
             "imagesLb" : ["images/cm-home-lb.jpg", "images/cm-srv2-lb.jpg", "images/cm-serv-lb.jpg", "images/cm-contact-lb.jpg"]
         },
@@ -302,7 +302,7 @@ var projects = {
             "title" : "caiakoopman.com",
             "link" : "http://caiakoopman.com",
             "dates" : "2014 - present",
-            "description" : "And when thou art so gone before&mdash;if that ever befall&mdash;then ere I can follow, thou must still appear to me, to pilot me still?&mdash;Was it not so? Well, then, did I believe all ye say, oh my pilot! I have here two pledges that I shall yet slay Moby Dick and survive it. Take another pledge, old man, said the Parsee, as his eyes lighted up like fire-flies in the gloom&mdash;Hemp only can kill thee. The gallows, ye mean.&mdash;I am immortal then, on land and on sea, cried Ahab, with a laugh of derision;&mdash;Immortal on land and on sea!",
+            "description" : "This 'Pop Surrealist' artist contacted me initially to rethink her web presence. Her existing site design had aged and was unintuitive to update, thus was rarely current.<br><br>During project discovery, it was quickly apparent that a rebuild was in order and a complete restructuring of her content was needed. Additionally, it was determined that she could, and should, sell all her own products directly from her own online shop, rather than a select few while producers sold the rest from their own outlets.<br><br>After a long planning phase, a heavily customized child theme and a well-thought out Woo Commerce store brought her new site up before the Christmas season.<br><br>Many custom templates, custom post types and widgets along w/ a ton of content bring this artist's work to her fans online.<br><br>Technologies Used: HTML, CSS, JS, Jquery, Wordpress, Woo Commerce, PHP.",
             "images" : ["images/caia-home.jpg", "images/caia-portfolio.jpg", "images/caia-shop.jpg", "images/caia-contact.jpg"],
             "imagesLb" : ["images/caia-home-lb.jpg", "images/caia-portfolio-lb.jpg", "images/caia-shop-lb.jpg", "images/caia-contact-lb.jpg"]
         },
@@ -310,7 +310,7 @@ var projects = {
             "title" : "touchwellness.com",
             "link" : "http://touchwellness.com",
             "dates" : "2015",
-            "description" : "Put the jug on will you bro, all these dodgy rugby balls can wait till later. The first prize for reffing the game goes to... James Cook and his tip-top L&P, what a stink buzz. Bro, gumboots are really sweet as good with primo pavlovas, aye. I'm not here to frack spiders, good afterble constanoon. You have no idea how nuclear-free our choice twink sticks were aye.",
+            "description" : "An on-site massage company in the San Francisco Bay Area decided they needed to upgrade their decade old website as they modernized their clients and services. The owners wanted a platform which was easily updateable that they could grow with; whether to add a new service, another glowing review or to eventually start a blog.<br><br>Wordpress was the obvious choice. During discovery we found that they were very interested in educating new customers and existing user base as to the methodology and expertise behind their services since so many didn't understand the benefits of thier specific wellness offerings.<br><br>A purely custom, responsive theme was generated with custom templates and modules for each page. Particularly noteable are the RaphealJS based, clickable 'ergonomics' info-graphic and the custom post type driven, home page panel tab to offer prospective clients a quick glimpse of the many benefits they can bring to a work place.<br><br>Technologies Used: HTML, CSS, JS, Jquery, RaphealJS, Wordpress, PHP.",
             "images" : ["images/tw-home.jpg", "images/tw-ctnt.jpg", "images/tw-contact.jpg"],
             "imagesLb" : ["images/tw-home-lb.jpg", "images/tw-ctnt-lb.jpg", "images/tw-contact-lb.jpg"]
         }
@@ -352,14 +352,14 @@ var sideProjects = {
         {
             "title" : "Neighborhood Map",
             "link": "http://mineralmedialabz.com/fendmap/",
-            "description" : "Lorem ipsum",
+            "description" : "This is a small web app which, as the name implies, taps into the Google Maps API to show a section of my neighborhood and point out a few notable places using custom icons instead of map pins. The left sidebar offers a clickable list of the selected landmarks and a text field which will filter the selections upon input. Additionally, the Foursquare and Yelp API's to offer information about the chosen places within a pop up window.<br><br>Along with gaining a better understanding of integrating remote data via API feed, I learned much more about the MVC paradigm of separating data and display from the logic methods to control data throughput. The next project will hopefully be a React app! Technologies Used: HTML, CSS, Javascript, Knockout MVC, Google Maps API, Foursquare API, Yelp API, node build tools.",
             "images" : ["images/map-app.jpg", "images/map-app-active.jpg"],
             "imagesLb" : ["images/map-app-lb.jpg", "images/map-app-active-lb.jpg"]
         },
         {
             "title" : "Space Hop Arcade Game",
             "link": "http://mineralmedialabz.com/spacehop/",
-            "description" : "Ipsum lorem",
+            "description" : "A take-off from the classic arcade game Frogger completely browser based and built on top of a basic Javascript engine. It was a great learning experience and really helped me to gain a more fundamental understanding of Javascript Objects and their methods; both language-based and custom. Additionally, this project afforded me the opportunity to learn more clearly about JS closures; something which I'm finding in ES6 to be a less complicated animal. Technologies Used: HTML, CSS, Javascript,  node build tools.",
             "images" : ["images/space-hop-game.jpg"],
             "imagesLb" : ["images/space-hop-game-lb.jpg"]
         }
