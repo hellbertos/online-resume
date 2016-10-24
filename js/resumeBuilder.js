@@ -244,6 +244,13 @@ var education = {
                 "date" : 2015,
                 "url" : "http://udacity.com",
                 "courseUrl" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+            },
+            {
+                "title" : "One Day Intensive Courses",
+                "school" : "Varies",
+                "date" : "2012 - presesnt",
+                "url" : "varies",
+                "courseUrl" : ""
             }
         ],
     "display" : function() {
@@ -311,8 +318,8 @@ var projects = {
             "link" : "http://touchwellness.com",
             "dates" : "2015",
             "description" : "An on-site massage company in the San Francisco Bay Area decided they needed to upgrade their decade old website as they modernized their clients and services. The owners wanted a platform which was easily updateable that they could grow with; whether to add a new service, another glowing review or to eventually start a blog.<br><br>Wordpress was the obvious choice. During discovery we found that they were very interested in educating new customers and existing user base as to the methodology and expertise behind their services since so many didn't understand the benefits of thier specific wellness offerings.<br><br>A purely custom, responsive theme was generated with custom templates and modules for each page. Particularly noteable are the RaphealJS based, clickable 'ergonomics' info-graphic and the custom post type driven, home page panel tab to offer prospective clients a quick glimpse of the many benefits they can bring to a work place.<br><br>Technologies Used: HTML, CSS, JS, Jquery, RaphealJS, Wordpress, PHP.",
-            "images" : ["images/tw-home.jpg", "images/tw-ctnt.jpg", "images/tw-contact.jpg"],
-            "imagesLb" : ["images/tw-home-lb.jpg", "images/tw-ctnt-lb.jpg", "images/tw-contact-lb.jpg"]
+            "images" : ["images/tw-home.jpg", "images/tw-wellness.jpg", "images/tw-contact.jpg"],
+            "imagesLb" : ["images/tw-home-lb.jpg", "images/tw-wellness-lb.jpg", "images/tw-contact-lb.jpg"]
         }
     ],
      "display" : function() {
